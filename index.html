@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck of Pain</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="text-center py-4 bg-dark text-sucess">
+        <h1>DECK OF PAIN</h1>
+    </header>
+
+<!-- Instrucciones en tarjeta desplegable -->
+<div class="instructions-btn-container">
+    <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#instructions">Instrucciones</button>
+</div>
+
+    <div id="instructions" class="collapse">
+        <div class="card mt-3">
+            <div class="card-body">
+                <p>Bienvenido a Deck of Pain, un entrenamiento que puedes hacer en un parque de calistenia o incluso en casa si quieres cambiar un poco las cosas.</p>
+                <p>Puedes utilizar equipos como pesas libres, kettle bells, cuerdas para saltar, etc. o simplemente hacer ejercicios con el peso corporal.</p>
+                <p>Primero empieza con una baraja de cartas de Poker. Asigna un ejercicio a un palo (tréboles, diamantes, corazones, picas).</p>
+                <ul>
+                    <li>Diamantes: Flexiones</li>
+                    <li>Tréboles: Sentadillas</li>
+                    <li>Corazones: Burpees</li>
+                    <li>Picas: Abdominales</li>
+                </ul>
+                <p>A continuación, simplemente empieza a sacar cartas, el número de la carta indica el número de repeticiones del ejercicio que haces. Las cartas figura (J, Q, K, A) como 10 repeticiones.</p>
+                <p>Este entrenamiento está pensado para gente que dispone de poco tiempo. Como siempre, asegúrate de hacer un buen calentamiento antes de cualquier ejercicio y, después, haz un buen enfriamiento y estiramientos.</p>
+                <p>Puedes jugar en modo libre, consiste en añadir más ejercicios como por ejemplo: sentadillas búlgaras, fondos y zancadas. Haz una lista del orden de los ejercicios:</p>
+                <ul>
+                    <li>Flexiones</li>
+                    <li>Sentadillas</li>
+                    <li>Burpees</li>
+                    <li>Fondos</li>
+                    <li>Zancadas</li>
+                    <li>Abdominales</li>
+                    <li>Sentadillas búlgaras</li>
+                </ul>
+                <p>Una vez hecho esto, saca una carta, y el número que aparezca serán las repeticiones a ejecutar. ¡Organiza bien la secuencia de ejercicios!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Mazo de cartas -->
+    <section class="container text-center">
+        <div id="deck-container" class="my-4 d-flex justify-content-center align-items-center">
+            <img src="https://deckofcardsapi.com/static/img/back.png" alt="Mazo de cartas" id="deck" class="img-fluid" style="max-height: 300px; cursor: pointer;">
+            <img src="" alt="Carta" id="current-card" class="img-fluid d-none mx-3" style="max-height: 300px; cursor: pointer;">
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-dark capsule mx-2" id="prev-card">CARTA ANTERIOR</button>
+            <button class="btn btn-dark capsule mx-1" id="next-card">CARTA SIGUIENTE</button>
+            <button class="btn btn-warning capsule mx-1" id="shuffle-deck">BARAJAR MAZO</button>
+        </div>
+    </section>
+
+    <!-- Cartas viejas -->
+
+    <section class="container text-center my-4">
+        <div id="old-cards-container" class="d-flex justify-content-center flex-wrap">
+            <!-- Aquí se mostrarán las cartas viejas -->
+        </div>
+    </section>
+
+    <!-- Radio en línea -->
+    <section class="container text-center my-5">
+        <audio controls="">
+            <source src="http://listen.181fm.com/181-oldschool_128k.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-sucess">
+        DECK OF PAIN - 2024
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+<title>Carousel</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

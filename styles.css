@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: Lato, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado y pie de página centrados */
+header.text-center, footer.text-center {
+    font-family: "Black Ops One", sans-serif;
+    font-size: 2em;
+    background: #333;
+    color: #ff3e3e;
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+/* Botón de información */
+.btn-info {
+    background-color: #303030; /* Color del botón */
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px 20px; /* Tamaño ajustado del botón */
+    text-align: center; /* Centra el texto dentro del botón */
+    display: inline-block; /* Asegura que el botón no se expanda demasiado */
+    font-size: 1em; /* Tamaño de fuente ajustado para mejor legibilidad */
+}
+
+/* Contenedor de botones de instrucciones */
+.instructions-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para la tarjeta */
+.card-body {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header, .card-footer {
+    background: #333;
+}
+
+/* Estilos para botones */
+.capsule {
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: #383838;
+}
+
+.btn-warning {
+    background-color: #ffd453;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+/* Estilos para el elemento de audio */
+audio {
+    width: 100%;
+    max-width: 600px;
+    display: block; /* Asegura que el audio esté en bloque */
+    margin: 0 auto; /* Centra el elemento de audio */
+}
+
+/* Títulos */
+h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin: 0; /* Elimina el margen por defecto del h1 */
+}
+
+/* Contenedor del mazo y cartas */
+#deck-container {
+    position: relative;
+    height: 300px;
+}
+
+#deck {
+    max-height: 300px;
+}
+
+#current-card {
+    max-height: 300px;
+    margin-left: 20px;
+}
+
+#old-cards-container img {
+    max-height: 100px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .btn-info {
+        padding: 10px 20px; /* Ajuste de padding para pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 2em; /* Ajuste de tamaño de fuente para pantallas pequeñas */
+    }
+
+    #deck-container, #current-card {
+        height: auto; /* Permite que el contenedor y la carta sean más flexibles */
+        margin-left: 0; /* Elimina el margen en pantallas pequeñas */
+    }
+
+    #old-cards-container img {
+        max-height: 80px; /* Ajuste de altura máxima para imágenes */
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-info {
+        padding: 10px 15px; /* Ajuste de padding para pantallas muy pequeñas */
+        font-size: 0.9em; /* Tamaño de fuente reducido para pantallas muy pequeñas */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Tamaño de fuente aún más pequeño */
+    }
+}
